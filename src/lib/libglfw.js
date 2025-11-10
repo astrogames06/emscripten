@@ -421,9 +421,11 @@ var LibraryGLFW = {
       // This logic comes directly from the sdl implementation. We cannot
       // call preventDefault on all keydown events otherwise onKeyPress will
       // not get called
-      if (event.key == 'Backspace' || event.key == 'Tab') {
-        event.preventDefault();
-      }
+
+      // I COMMENTED OUT BECAUSE FOR WHEN I HAVE CODEMIRROR AND RAYLIB THIS WAS STOPPING BACKSPACE AND TAB
+      // if (event.key == 'Backspace' || event.key == 'Tab') {
+      //   event.preventDefault();
+      // }
     },
 
     onKeyup: (event) => {
